@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         writeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, WriteActivity.class);
+                Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
                 intent.putExtra("type", 0);
                 startActivity(intent);
             }

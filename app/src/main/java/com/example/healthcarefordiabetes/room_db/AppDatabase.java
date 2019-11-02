@@ -7,15 +7,15 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.healthcarefordiabetes.model.Diabetes;
+import com.example.healthcarefordiabetes.model.Diary;
 
 
-@Database(entities = {Diabetes.class}, exportSchema = false, version = 1)
+@Database(entities = {Diary.class}, exportSchema = false, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
-    private static final String DB_NAME = "diabetes.db";
+    private static final String DB_NAME = "diary.db";
 
-    public abstract DiabetesDao diabetesDao();
+    public abstract DiaryDao diaryDao();
 
     private static AppDatabase mInstance;
 

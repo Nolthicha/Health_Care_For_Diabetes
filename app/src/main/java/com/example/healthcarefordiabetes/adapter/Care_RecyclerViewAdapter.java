@@ -11,22 +11,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.healthcarefordiabetes.InDetailActivity;
+import com.example.healthcarefordiabetes.InCareActivity;
 import com.example.healthcarefordiabetes.R;
-import com.example.healthcarefordiabetes.model.Diabetes;
+import com.example.healthcarefordiabetes.model.Care;
 
 import java.util.List;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>{
+public class Care_RecyclerViewAdapter extends RecyclerView.Adapter<Care_RecyclerViewAdapter.MyViewHolder> {
 
     private Context mContext;
     private int mResource;
-    private List<Diabetes> mDiabetesList;
+    private List<Care> mCareList;
 
-    public RecyclerViewAdapter(Context mContext, int mResource, List<Diabetes> mDiabetesList) {
+    public Care_RecyclerViewAdapter(Context mContext, int mResource, List<Care> mCareList) {
         this.mContext = mContext;
         this.mResource = mResource;
-        this.mDiabetesList = mDiabetesList;
+        this.mCareList = mCareList;
     }
 
 
@@ -40,46 +40,41 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Diabetes diabetes = mDiabetesList.get(position);
+        Care care = mCareList.get(position);
 
-        holder.diabetes = diabetes;
-        holder.nameTextView.setText(diabetes.name);
+        holder.care = care;
+        holder.nameTextView.setText(care.name);
         //holder.descriptionTextView.setText(diabetes.description);
-        holder.diabetesImageView.setImageResource(diabetes.imageRes);
-
-
-
+        holder.careImageView.setImageResource(care.imageRes);
     }
 
     @Override
     public int getItemCount() {
-        return mDiabetesList.size();
+        return mCareList.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private ImageView diabetesImageView;
+        private ImageView careImageView;
         private TextView nameTextView;
         private TextView descriptionTextView;
 
-
-        private Diabetes diabetes;
+        private Care care;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            this.diabetesImageView = itemView.findViewById(R.id.logo_image_view);
+            this.careImageView = itemView.findViewById(R.id.logo_image_view);
             this.nameTextView = itemView.findViewById(R.id.description_text_view);
             this.descriptionTextView = itemView.findViewById(R.id.description_text_view);
-
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(mContext, InDetailActivity.class);
-                    intent.putExtra("name", diabetes.name);
-                    intent.putExtra("image", diabetes.imageRes);
-                    intent.putExtra("description",diabetes.description);
+                    Intent intent = new Intent(mContext, InCareActivity.class);
+                    intent.putExtra("name", care.name);
+                    intent.putExtra("image", care.imageRes);
+                    intent.putExtra("description",care.description);
                     mContext.startActivity(intent);
                 }
             });

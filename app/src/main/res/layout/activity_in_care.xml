@@ -31,20 +31,21 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="358dp"
-        android:layout_height="601dp"
+        android:layout_width="368dp"
+        android:layout_height="687dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.842"
-        app:srcCompat="@drawable/w1" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/w2" />
 
     <TextView
         android:id="@+id/description_text_view"
-        android:layout_width="309dp"
-        android:layout_height="288dp"
+        android:layout_width="331dp"
+        android:layout_height="319dp"
         android:text="     TextView"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"

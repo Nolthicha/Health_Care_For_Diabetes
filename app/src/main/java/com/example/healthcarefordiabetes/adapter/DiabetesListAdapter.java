@@ -46,7 +46,7 @@ public class DiabetesListAdapter extends ArrayAdapter<Diabetes> {
         Diabetes diabetes = mDiabetesList.get(position);
 
         // กำหนดชื่อสถานที่ลงใน TextView (place_name_text_view)
-        TextView diabetesNameTextView = v.findViewById(R.id.name_text_view);
+        TextView diabetesNameTextView = v.findViewById(R.id.description_text_view);
         diabetesNameTextView.setText(diabetes.name);
 
         // กำหนดชื่ออำเภอลงใน TextView (district_text_view)

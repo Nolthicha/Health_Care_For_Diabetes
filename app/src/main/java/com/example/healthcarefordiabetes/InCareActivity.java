@@ -7,12 +7,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class InDetailActivity extends AppCompatActivity {
+public class InCareActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_in_detail);
+        setContentView(R.layout.activity_in_care);
 
         Intent intent = getIntent();
         String diabetesName = intent.getStringExtra("name");
@@ -24,8 +24,9 @@ public class InDetailActivity extends AppCompatActivity {
         coverImageView.setImageResource(diabetesImageRes);
 
 
-        //TextView diabetesNameTextView = findViewById(R.id.in_name_text_view);
-        //diabetesNameTextView.setText(diabetesName);
+
+        TextView diabetesNameTextView = findViewById(R.id.in_name_text_view);
+        diabetesNameTextView.setText(diabetesName);
 
         TextView diabetesDescriptionTextView = findViewById(R.id.description_text_view);
         diabetesDescriptionTextView.setText(diabetesDescription);

@@ -9,17 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WriteActivity"></activity>
-        <activity android:name=".DiabetesCareActivity" />
-        <activity android:name=".InDetailActivity" />
-        <activity android:name=".DiabetesDetailActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".InsertDiaryActivity"></activity>
+
+
+
+
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DiabetesDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DiabetesCareActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InCareActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DiaryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>
