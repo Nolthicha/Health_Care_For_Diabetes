@@ -31,15 +31,6 @@ public class InsertDiaryActivity extends AppCompatActivity {
 
 
 
-        //ImageView ledgerTypeImageView = findViewById(R.id.ledger_type_image_view);
-        //ledgerTypeImageView.setImageResource(R.drawable.box);
-
-        /*ledgerTypeImageView.setImageResource(
-                mLedgerType == 0 ? R.drawable.ic_income : R.drawable.ic_expense
-        );*/
-
-
-
 
         Button saveButton = findViewById(R.id.save_button);
         saveButton.setOnClickListener(new View.OnClickListener() {

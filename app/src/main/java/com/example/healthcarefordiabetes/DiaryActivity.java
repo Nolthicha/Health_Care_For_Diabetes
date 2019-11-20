@@ -26,6 +26,7 @@ public class DiaryActivity extends AppCompatActivity {
 
 
 
+
         Button addButton = findViewById(R.id.add_button);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -29,6 +29,7 @@
         android:layout_marginRight="24dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/date_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="TextView"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/description_text_view"
         app:layout_constraintStart_toStartOf="@+id/description_text_view" />

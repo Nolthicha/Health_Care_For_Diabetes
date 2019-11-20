@@ -53,13 +53,8 @@ public class DiabetesCareActivity extends AppCompatActivity {
 
         LinearLayoutManager lm = new LinearLayoutManager(this );
 
-
         recyclerView.setLayoutManager(lm);
         recyclerView.setAdapter(mAdapter);
-
-
-
-
 
     }
 
@@ -81,31 +76,6 @@ public class DiabetesCareActivity extends AppCompatActivity {
 
     private void populateData() {
 
-
-/*        Place place = new Place("พระปฐมเจดีย์","เมือง",R.drawable.ongpha);
-        mPlaceList.add(place);
-
-        place = new Place("บ้านปายนา","นครชัยศรี",R.drawable.paina1);
-        mPlaceList.add(place);
-
-        place = new Place("พิพิธภัณฑ์รถเก่า","นครชัยศรี",R.drawable.jesadatechnikmuseum);
-        mPlaceList.add(place);
-
-        place = new Place("ตลาดท่านา","นครชัยศรี",R.drawable.thana);
-        mPlaceList.add(place);
-
-        place = new Place("วัดกลางบางแก้ว","นครชับศรี",R.drawable.watklangbangkaew);
-        mPlaceList.add(place);
-
-        place = new Place("ตลาดน้ำลำพญา","บางเลน",R.drawable.lamphaya);
-        mPlaceList.add(place);
-
-        place = new Place("ตลาดน้ำทุ่งบัวแดง","บางเลน",R.drawable.tungbuadang);
-        mPlaceList.add(place);
-
-        place = new Place("Tree & Tide Riverside","บางเลน",R.drawable.treetideriverside);
-        mPlaceList.add(place);
-     */
     }
 
 }
